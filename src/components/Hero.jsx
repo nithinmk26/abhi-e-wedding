@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import NamesReveal from './NamesReveal.jsx';
-import bgImage from '../assets/abhi_anitha.jpeg';
+import bgImage from '../assets/abhi_anitha1.jpeg';
 
 const fadeIn = {
   initial: { opacity: 0, y: -10 },
