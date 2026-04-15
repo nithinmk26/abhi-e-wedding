@@ -32,24 +32,6 @@ export default function MapSection() {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </motion.div>
-        <motion.div
-          className="address"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.4 }}
-          transition={{ duration: 0.8, ease: 'easeOut' }}
-        >
-          {INVITE.addressLines.map(l => <div key={l}>{l}</div>)}
-        </motion.div>
-        <motion.div
-          style={{ marginTop: '2.5rem', fontSize: '.8rem', opacity: .6 }}
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 0.1 }}
-          transition={{ duration: 1.5 }}
-        >
-          Crafted with ❤️ by NITHIN
-        </motion.div>
       </div>
     </section>
   );

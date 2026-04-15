@@ -38,8 +38,8 @@ export default function Details() {
               <p>{INVITE.muhurthaDate}<br />{INVITE.muhurthaTime}</p>
             </motion.div>
             <motion.div className="detail-block" variants={cardVariant}>
-              <h3>Reception</h3>
-              <p>{INVITE.muhurthaDate}<br />12:00 PM</p>
+              <h3>Beegara Oota</h3>
+              <p>May 10, 2026<br />12:30 PM<br />Mayigonahalli</p>
             </motion.div>
             <motion.div className="detail-block" variants={cardVariant}>
               <h3>Venue</h3>

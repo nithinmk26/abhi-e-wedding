@@ -31,9 +31,9 @@ p { line-height: 1.6; }
 .hero-badge { position: absolute; top: 1.4rem; right: 1.4rem; z-index: 3; font-family: 'Playfair Display', serif; background: rgba(0,0,0,0.35); backdrop-filter: blur(4px); padding: .55rem .95rem; border-radius: 12px; box-shadow: 0 4px 14px rgba(0,0,0,.25); }
 .hero-badge-text { font-size: .85rem; letter-spacing: 1px; font-weight: 600; color: #fff; text-transform: uppercase; }
 .hero-bg { position: absolute; inset: 0; background-position: center; background-size: cover; background-repeat: no-repeat; }
-.hero-bg::after { content: ''; position: absolute; inset: 0; background: rgba(0,0,0,0.35); }
+.hero-bg::after { content: ''; position: absolute; inset: 0; background: rgba(0,0,0,0.15); }
 .names-wrapper, .names-container { position: relative; z-index: 2; }
-.name { color:#fff; text-shadow:0 5px 20px rgba(0,0,0,.5); }
+.name { color:#fff; text-shadow:0 5px 20px rgba(0,0,0,.8), 0 2px 8px rgba(0,0,0,.6); }
 .unite-text { color: #fff; text-shadow: 0 3px 12px rgba(0,0,0,.35); }
 
 /* Names Reveal spacing */
@@ -42,6 +42,12 @@ p { line-height: 1.6; }
 .name { font-size: clamp(1.6rem, 5.4vw, 3.8rem); font-weight: 600; padding: 0 .8rem; white-space: nowrap; }
 .unite-text { margin-top: 1.5rem; font-size: clamp(1.4rem, 3.5vw, 2.4rem); display: flex; align-items: center; justify-content: center; gap: .75rem; }
 .heart { width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; }
+
+/* Countdown Timer */
+.countdown-container { margin-top: 1.2rem; color: var(--text-dark); }
+.join-us-text { font-size: clamp(1.2rem, 3vw, 1.8rem); margin-bottom: 0.2rem; font-weight: 300; }
+.countdown-timer { display: flex; gap: 0.7rem; justify-content: center; font-family: 'Poppins', sans-serif; }
+.time-unit { font-size: clamp(1.4rem, 4vw, 2.2rem); font-weight: 600; background: rgba(0,0,0,0.1); padding: 0.5rem 0.8rem; border-radius: 8px; min-width: 48px; text-align: center; }
 
 /* Weds banner responsive sizing */
 .weds-banner .weds-unite { display: flex; align-items: center; gap: .75rem; justify-content: center; }
@@ -84,3 +90,24 @@ p { line-height: 1.6; }
   .map-container { height: 340px; }
   .hero-badge { top: .9rem; right: .9rem; padding: .45rem .75rem; }
 }
+
+/* Weds Banner Specific Styles */
+.weds-banner .countdown-section {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.weds-banner .countdown-container {
+  margin-top: 0.5rem;
+}
+.weds-banner .join-us-text {
+  margin-bottom: 0.1rem;
+}
+.weds-banner .countdown-timer {
+  gap: 0.5rem;
+}
+.weds-banner .time-unit {
+  min-width: 40px;
+  padding: 0.4rem 0.6rem;
+}
+
